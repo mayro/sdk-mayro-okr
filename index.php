@@ -39,7 +39,7 @@
             // document.getElementById('bonjour-la-vie').style.color = color;
             // document.getElementById('bonjour-la-vie').style.visibility = visibility;
             // document.getElementById('link-okr').style.color = color;
-             document.getElementsByClassName('head').style.textAlign = align;
+             document.getElementById('head').style.textAlign = align;
              document.getElementById('btn-sign-id').style.color = color;
         });
     </script>
