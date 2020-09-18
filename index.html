@@ -7,6 +7,31 @@
 	<script type="text/javascript" src="https://try.abtasty.com/0f57f5aaaf78394a3da3612aeb013df8.js"></script>
 	<script src="https://tag.flagship.io/0.1.1/index.js"></script>
 
+	<script>
+
+        window._fs = window._fs || [];
+        _fs.push(['cid', 'bp7vajv7a7200mbior00'])
+        _fs.push(['uid', '123456781'])
+
+        const response = axios
+            .post("https://decision.flagship.io/v2/bnjsteif2ap010p32cr0/campaigns", {
+                    visitor_id: "123456781",
+                    context: {
+                        SOME: "VISITOR_CONTEXT"
+                    },
+                    trigger_hit: true,
+                    decision_group: null
+                },
+                {
+                    headers: {
+                        'x-api-key': 'bp7vajv7a7200mbior00'
+                    }
+                }
+            );
+        console.log(response);
+
+	</script>
+
 	<title>Progressus - Free business bootstrap template by GetTemplate</title>
 
 	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
@@ -254,5 +279,6 @@
 	<script src="assets/js/headroom.min.js"></script>
 	<script src="assets/js/jQuery.headroom.min.js"></script>
 	<script src="assets/js/template.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </body>
 </html>
