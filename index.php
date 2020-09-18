@@ -69,6 +69,7 @@
         <div class="navbar-header">
             <!-- Button for smallest screens -->
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+
             <a class="navbar-brand" href="index.html"><img src="assets/images/logo-ab.png" alt="abtasty-logo"></a>
         </div>
         <div class="navbar-collapse collapse">
@@ -83,7 +84,7 @@
                     </ul>
                 </li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a class="btn" href="signin.html">SIGN IN / SIGN UP</a></li>
+                <li><a class="btn" href="signin.html" onclick="sendEvent()">SIGN IN / SIGN UP</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -290,5 +291,20 @@
 <script src="assets/js/headroom.min.js"></script>
 <script src="assets/js/jQuery.headroom.min.js"></script>
 <script src="assets/js/template.js"></script>
+
+<script>
+    function sendEvent() {
+        window.fs.send({
+            t: 'EVENT',
+            cid: 'bp7vajv7a7200mbior00',
+            vid: '923456781',
+            ds: 'APP',
+            ec: 'Action Tracking',
+            ea: 'click singin Button',
+            el: 'Clic on sign in button',
+            ev: 1
+        })
+    }
+</script>
 </body>
 </html>

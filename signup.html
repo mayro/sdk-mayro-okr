@@ -112,7 +112,7 @@
 										</label>                        
 									</div>
 									<div class="col-lg-4 text-right">
-										<button class="btn btn-action" type="submit">Register</button>
+										<button class="btn btn-action" type="submit" onclick="sendTransaction()">Register</button>
 									</div>
 								</div>
 							</form>
@@ -208,5 +208,22 @@
 	<script src="assets/js/headroom.min.js"></script>
 	<script src="assets/js/jQuery.headroom.min.js"></script>
 	<script src="assets/js/template.js"></script>
+
+	<script>
+        function sendTransaction() {
+            window.fs.send({
+                t: 'TRANSACTION',
+                cid: 'bp7vajv7a7200mbior00',
+                vid: '923456781',
+                ds: 'APP',
+                tid: '987654321',
+                ta: 'register Button',
+                tr: 100,
+                ts: 1,
+                tt: 10,
+                tc: 'EUR'
+            })
+        }
+	</script>
 </body>
 </html>
