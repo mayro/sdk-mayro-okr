@@ -27,13 +27,13 @@
                 }
             ).then(function (response) {
             color = response.data.campaigns[0].variation.modifications.value.color;
-            align = response.data.campaigns[0].variation.modifications.value.text-align;
+            test = response.data.campaigns[0].variation.modifications.value.text-align;
             visibility = response.data.campaigns[1].variation.modifications.value.visibility;
 
 
             //document.getElementById('header-1').style.color = color;
             console.log(color);
-           // console.log(align);
+            console.log(test);
             //console.log(style);
             console.log(response.data);
             // document.getElementById('bonjour-la-vie').style.color = color;
