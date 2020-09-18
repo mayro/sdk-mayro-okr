@@ -24,7 +24,6 @@
                 {
                     headers: {
                         'x-api-key': 'bp7vajv7a7200mbior00',
-                        'Access-Control-Allow-Origin': true,
                         'Origin': 'https://sdk-mayro-okr.herokuapp.com/'
                     }
                 }
