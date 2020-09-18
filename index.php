@@ -27,20 +27,20 @@
                 }
             ).then(function (response) {
             color = response.data.campaigns[0].variation.modifications.value.color;
-            test = response.data.campaigns[0].variation.modifications.value.text-align;
+            align = response.data.campaigns[0].variation.modifications.value.align;
             visibility = response.data.campaigns[1].variation.modifications.value.visibility;
 
 
             //document.getElementById('header-1').style.color = color;
             console.log(color);
-            console.log(test);
+            console.log(align);
             //console.log(style);
             console.log(response.data);
             // document.getElementById('bonjour-la-vie').style.color = color;
             // document.getElementById('bonjour-la-vie').style.visibility = visibility;
             // document.getElementById('link-okr').style.color = color;
-            // document.getElementById('link-okr').style.textAlign = test;
-            // document.getElementById('btn-sign-id').style.color = color;
+             document.getElementsByClassName('head').style.textAlign = align;
+             document.getElementById('btn-sign-id').style.color = color;
         });
     </script>
 
