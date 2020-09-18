@@ -26,7 +26,7 @@
                     }
                 }
             ).then(function (response) {
-            color = response.data.campaigns[0].variation.modifications.value.color;            document.getElementById('header-1').style.color = color;            console.log(color);
+                  console.log(response.data);
         });
     </script>
 
