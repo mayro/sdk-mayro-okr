@@ -28,13 +28,15 @@
             ).then(function (response) {
             color = response.data.campaigns[0].variation.modifications.value.color;
             style = response.data.campaigns[0].variation.modifications.value.style;
+            visibility = response.data.campaigns[1].variation.modifications.value.visibility;
+
 
             //document.getElementById('header-1').style.color = color;
             console.log(color);
             console.log(style);
             console.log(response.data);
             document.getElementById('bonjour-la-vie').style.color = color;
-            document.getElementById('bonjour-la-vie').style.visibility = style;
+            document.getElementById('bonjour-la-vie').style.visibility = visibility;
         });
     </script>
 
