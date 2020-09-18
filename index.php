@@ -36,11 +36,11 @@
             console.log(align);
             //console.log(style);
             console.log(response.data);
-             document.getElementById('bonjour-la-vie').style.color = color;
-            // document.getElementById('bonjour-la-vie').style.visibility = visibility;
-             document.getElementById('link-okr').style.color = color;
-             document.getElementById('head').style.textAlign = align;
-             document.getElementById('btn-sign-id').style.color = color;
+            document.getElementById('bonjour-la-vie').style.color = color;
+            document.getElementById('img-logo-abtasty').style.visibility = visibility;
+            document.getElementById('link-okr').style.color = color;
+            document.getElementById('head').style.textAlign = align;
+            document.getElementById('btn-sign-id').style.color = color;
         });
     </script>
 
@@ -71,7 +71,7 @@
             <!-- Button for smallest screens -->
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
 
-            <a class="navbar-brand" href="index.html"><img src="assets/images/logo-ab.png" alt="abtasty-logo"></a>
+            <a class="navbar-brand" href="index.html"><img id="img-logo-abtasty" src="assets/images/logo-ab.png" alt="abtasty-logo"></a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav pull-right">
