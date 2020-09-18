@@ -33,7 +33,7 @@
             console.log(color);
             console.log(style);
             console.log(response.data);
-            document.getElementById('title-id').style.color = color;
+            document.getElementById('bonjour-la-vie').style.color = color;
         });
     </script>
 
@@ -88,7 +88,7 @@
 <header id="head">
     <div class="container">
         <div class="row">
-            <h1 class="lead">Bonjour La vie <3</h1>
+            <h1 class="lead" id="bonjour-la-vie">Bonjour La vie <3</h1>
             <p class="tagline"><a href="https://app2.abtasty.com/"> ABTASTY OKR </a></p>
             <p><a class="btn btn-default btn-lg" role="button">MORE INFO</a> <a class="btn btn-action btn-lg" role="button">DOWNLOAD NOW</a></p>
         </div>
