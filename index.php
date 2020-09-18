@@ -27,7 +27,7 @@
                 }
             ).then(function (response) {
             color = response.data.campaigns[0].variation.modifications.value.color;
-            style = response.data.campaigns[0].variation.modifications.value.style;
+            align = response.data.campaigns[0].variation.modifications.value.text-align;
             visibility = response.data.campaigns[1].variation.modifications.value.visibility;
 
 
@@ -37,6 +37,9 @@
             console.log(response.data);
             document.getElementById('bonjour-la-vie').style.color = color;
             document.getElementById('bonjour-la-vie').style.visibility = visibility;
+            document.getElementById('link-okr').style.color = color;
+            document.getElementById('link-okr').style.textAlign = align;
+
         });
     </script>
 
@@ -92,7 +95,7 @@
     <div class="container">
         <div class="row">
             <h1 class="lead" id="bonjour-la-vie">Bonjour La vie <3</h1>
-            <p class="tagline"><a href="https://app2.abtasty.com/"> ABTASTY OKR </a></p>
+            <p class="tagline" id = "link-okr"><a href="https://app2.abtasty.com/"> ABTASTY OKR </a></p>
             <p><a class="btn btn-default btn-lg" role="button">MORE INFO</a> <a class="btn btn-action btn-lg" role="button">DOWNLOAD NOW</a></p>
         </div>
     </div>
