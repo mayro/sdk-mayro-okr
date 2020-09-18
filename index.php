@@ -32,11 +32,12 @@
             //document.getElementById('header-1').style.color = color;
             console.log(color);
             console.log(style);
-                  console.log(response.data);
+            console.log(response.data);
+            document.getElementById('title-id').style.color = color;
         });
     </script>
 
-    <title>Progressus - Free business bootstrap template by GetTemplate</title>
+    <title id="title-id">Progressus - Free business bootstrap template by GetTemplate</title>
 
     <link rel="shortcut icon" href="assets/images/gt_favicon.png">
 
