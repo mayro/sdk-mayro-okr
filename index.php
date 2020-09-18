@@ -302,7 +302,7 @@
             ds: 'APP',
             ec: 'Action Tracking',
             ea: 'click singin Button',
-            el: 'Clic on sign in button',
+            el: 'click singin Button',
             ev: 1
         })
     }
