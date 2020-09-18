@@ -14,7 +14,8 @@
         _fs.push(['cid', 'bp7vajv7a7200mbior00'])
         _fs.push(['uid', '123456781'])
 
-        const response = axios.post("https://decision.flagship.io/v2/bnjsteif2ap010p32cr0/campaigns", {
+        axios
+            .post("https://decision.flagship.io/v2/bnjsteif2ap010p32cr0/campaigns", {
                     visitor_id: "123456781",
                     context: {
                         SOME: "VISITOR_CONTEXT"
@@ -27,8 +28,13 @@
                         'x-api-key': 'bp7vajv7a7200mbior00'
                     }
                 }
-            );
-        console.log(response);
+            ).then(function (response) {
+            color = response.data.campaigns[0].variation.modifications.value.color;
+
+            document.getElementById('header-1').style.color = color;
+
+            console.log(color);
+		});
 
 	</script>
 
