@@ -13,7 +13,7 @@
     <script type="text/javascript">
         axios
             .post("https://decision.flagship.io/v2/bnjsteif2ap010p32cr0/campaigns", {
-                    visitor_id: "123456789",
+                    visitor_id: "923456781",
                     context: {
                         SOME: "VISITOR_CONTEXT"
                     },
@@ -22,7 +22,7 @@
                 },
                 {
                     headers: {
-                        'x-api-key': 'zm1EqDTyV3abYcGT4zLEe10D1pxYsYmm3SusIuRc'
+                        'x-api-key': '9dZhkQKzel1JjdOFJjqAY6XQcp3oIkro3WoTciSp'
                     }
                 }
             ).then(function (response) {
