@@ -13,7 +13,7 @@
     <script type="text/javascript">
         axios
             .post("https://decision.flagship.io/v2/bnjsteif2ap010p32cr0/campaigns", {
-                    visitor_id: "923456781",
+                    visitor_id: "visibility",
                     context: {
                         SOME: "VISITOR_CONTEXT"
                     },
