@@ -15,7 +15,7 @@
             .post("https://decision.flagship.io/v2/bp7vajv7a7200mbior00/campaigns", {
                     visitor_id: "923456781",
                     context: {
-                        SOME: "VISITOR_CONTEXT"
+                        SOME: "Bonjour Mayro!"
                     },
                     trigger_hit: true,
                     decision_group: null
