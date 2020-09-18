@@ -28,7 +28,7 @@
                 }
             );
 
-        console.log(response);
+        console.log(response.data);
     </script>
 
     <title>Progressus - Free business bootstrap template by GetTemplate</title>
