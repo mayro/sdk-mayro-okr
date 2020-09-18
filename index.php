@@ -34,6 +34,7 @@
             console.log(style);
             console.log(response.data);
             document.getElementById('bonjour-la-vie').style.color = color;
+            document.getElementById('bonjour-la-vie').style.visibility = style;
         });
     </script>
 
