@@ -11,9 +11,9 @@
     <script type="text/javascript" src="static/js/bootstrap.js"></script>
 
     <script type="text/javascript">
-        const response = axios
+        axios
             .post("https://decision.flagship.io/v2/bnjsteif2ap010p32cr0/campaigns", {
-                    visitor_id: "923456781",
+                    visitor_id: "123456789",
                     context: {
                         SOME: "VISITOR_CONTEXT"
                     },
@@ -22,12 +22,12 @@
                 },
                 {
                     headers: {
-                        'x-api-key': 'bp7vajv7a7200mbior00',
+                        'x-api-key': 'zm1EqDTyV3abYcGT4zLEe10D1pxYsYmm3SusIuRc'
                     }
                 }
-            );
-
-        console.log(response.data);
+            ).then(function (response) {
+            color = response.data.campaigns[0].variation.modifications.value.color;            document.getElementById('header-1').style.color = color;            console.log(color);
+        });
     </script>
 
     <title>Progressus - Free business bootstrap template by GetTemplate</title>
