@@ -36,9 +36,9 @@
             console.log(align);
             //console.log(style);
             console.log(response.data);
-            // document.getElementById('bonjour-la-vie').style.color = color;
+             document.getElementById('bonjour-la-vie').style.color = color;
             // document.getElementById('bonjour-la-vie').style.visibility = visibility;
-            // document.getElementById('link-okr').style.color = color;
+             document.getElementById('link-okr').style.color = color;
              document.getElementById('head').style.textAlign = align;
              document.getElementById('btn-sign-id').style.color = color;
         });
