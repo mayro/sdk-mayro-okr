@@ -39,7 +39,7 @@
             document.getElementById('bonjour-la-vie').style.visibility = visibility;
             document.getElementById('link-okr').style.color = color;
             document.getElementById('link-okr').style.textAlign = align;
-
+            document.getElementById('btn-sign-id').style.color = color;
         });
     </script>
 
@@ -84,7 +84,7 @@
                     </ul>
                 </li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a class="btn" href="signin.html" onclick="sendEvent()">SIGN IN / SIGN UP</a></li>
+                <li><a class="btn" id = "btn-sign-id" href="signin.html" onclick="sendEvent()">SIGN IN / SIGN UP</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
